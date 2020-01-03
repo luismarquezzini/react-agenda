@@ -217,22 +217,22 @@ render() {
         <form onSubmit={this.handleEdit}>
           <div className="agendCtrls-label-wrapper">
             <div className="agendCtrls-label-inline">
-              <label>Event name</label>
-              <input type="text" name="name" autoFocus ref="eventName" className="agendCtrls-event-input" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Event Name"/>
+              <label>Nome do Evento</label>
+              <input type="text" name="name" autoFocus ref="eventName" className="agendCtrls-event-input" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Nome do Evento"/>
             </div>
             <div className="agendCtrls-label-inline ">
-              <label>Color</label>
+              <label>Cores</label>
               <div className="agendCtrls-radio-wrapper">
                 {colors}</div>
             </div>
           </div>
           <div className="agendCtrls-timePicker-wrapper">
             <div className="agendCtrls-time-picker">
-              <label >Start Date</label>
+              <label >Data de início</label>
               <Rdate value={this.state.startDateTime} onChange={this.handleDateChange.bind(null, 'startDateTime')} input={false} viewMode="time" ></Rdate>
             </div>
             <div className="agendCtrls-time-picker">
-              <label >End Date</label>
+              <label >Data final</label>
               <Rdate value={this.state.endDateTime} onChange={this.handleDateChange.bind(null, 'endDateTime')} input={false} viewMode="time" ></Rdate>
             </div>
           </div>
@@ -249,22 +249,22 @@ render() {
       <form onSubmit={this.handleSubmit}>
         <div className="agendCtrls-label-wrapper">
           <div className="agendCtrls-label-inline">
-            <label>Event name</label>
-            <input type="text" ref="eventName" autoFocus name="name" className="agendCtrls-event-input" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Event Name"/>
+            <label>Nome do Evento</label>
+            <input type="text" ref="eventName" autoFocus name="name" className="agendCtrls-event-input" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Nome do Evento"/>
           </div>
           <div className="agendCtrls-label-inline">
-            <label>Color</label>
+            <label>Cores</label>
             <div className="agendCtrls-radio-wrapper">
               {colors}</div>
           </div>
         </div>
         <div className="agendCtrls-timePicker-wrapper">
           <div className="agendCtrls-time-picker">
-            <label >Start Date</label>
+            <label >Data de início</label>
             <Rdate value={this.state.startDateTime} onChange={this.handleDateChange.bind(null, 'startDateTime')} input={false} viewMode="time" ></Rdate>
           </div>
           <div className="agendCtrls-time-picker">
-            <label >End Date</label>
+            <label >Data final</label>
             <Rdate value={this.state.endDateTime} onChange={this.handleDateChange.bind(null, 'endDateTime')} input={false} viewMode="time" ></Rdate>
           </div>
         </div>
